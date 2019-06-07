@@ -1,19 +1,21 @@
-import React, {Component} from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
-import Header from './composants/Header.js'
+import Header from "./composants/Header";
+import ListeItems from "./composants/ListeItems";
 
 class App extends Component {
-	render() {
-		return (
-			<div className="App">
-			<div>
-			<Header />
-			</div>
-			</div>
-			);
-	}
+  render() {
+    return (
+      <div class="App">
+        <div>
+          <Header />
+          <br />
+        </div>
+        <ListeItems />
+      </div>
+    );
+  }
 }
 
 export default App;
